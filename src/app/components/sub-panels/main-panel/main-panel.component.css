@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  flex-grow: 1;
+}
+
+.home-panel {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.home-panel h1 {
+  color: #6a0dad;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.quick-links a {
+  background-color: #8a2be2;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.quick-links a:hover {
+  background-color: #6a0dad;
+}
+
+.summary {
+  font-size: 1.1em;
+  color: #333;
+}

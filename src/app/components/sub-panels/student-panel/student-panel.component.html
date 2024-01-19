@@ -1,0 +1,23 @@
+<div class="table-container">
+  <div class="table-header">
+    <button class="btn btn-add">Dodaj</button>
+    <button class="btn btn-delete">Usuń</button>
+  </div>
+  <table class="student-panel">
+    <thead>
+    <tr>
+      <th style="width: 20%;">Student Index</th>
+      <th style="width: 20%;">Name</th>
+      <th style="width: 20%;">Last Name</th>
+      <th style="width: 100%;">Class</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.studentIndex }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.lastName }}</td>
+      <td>{{ student.schoolClassName }}</td>
+    </tr>    </tbody>
+  </table>
+</div>

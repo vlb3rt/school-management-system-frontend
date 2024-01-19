@@ -1,0 +1,55 @@
+:host {
+  display: flex;
+  flex-grow: 1
+}
+
+.table-container {
+  width: 100%;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.table-header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #8a2be2;
+  padding: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #5d0090;
+}
+
+.class-panel {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.class-panel th, .class-panel td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.class-panel th {
+  background-color: #f0f0f0;
+}
+
+.class-panel tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.class-panel tr:hover {
+  background-color: #ddd;
+}

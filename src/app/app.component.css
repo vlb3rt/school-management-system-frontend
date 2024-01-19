@@ -1,0 +1,21 @@
+.app-container  {
+  display: flex;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+app-side-menu {
+  width: 250px;
+  height: 100%;
+  overflow: auto;
+  margin: 5px 5px 0px 5px;
+}
+
+app-main-panel {
+  flex-grow: 1;
+  height: 100%;
+  overflow: auto;
+  margin: 5px 5px 0px 0px;
+  justify-content: center;
+}
+
+

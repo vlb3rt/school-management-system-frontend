@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #8a2be2;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+}
+
+.navbar a, .navbar button {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button {
+  background-color: #6a0dad; /* Ciemniejszy fiolet dla przycisku */
+  border: none; /* Usunięcie obramowania przycisku */
+}
+
+.navbar button:hover {
+  background-color: #5d0090; /* Jeszcze ciemniejszy fiolet dla efektu hover */
+}
