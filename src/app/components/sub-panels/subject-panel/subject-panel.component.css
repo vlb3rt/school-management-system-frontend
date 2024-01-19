@@ -10,6 +10,7 @@
 }
 
 .table-header {
+  border-radius: 10px;
   margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
