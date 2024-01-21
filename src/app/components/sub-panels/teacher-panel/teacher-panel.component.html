@@ -1,20 +1,26 @@
 <div class="table-container">
   <div class="table-header">
-    <button class="btn btn-add">Add</button>
+    <button class="btn btn-add" (click)="add()">Add</button>
   </div>
   <table class="teacher-panel">
     <thead>
     <tr>
+      <th style="width: 5%;">Id</th>
       <th style="width: 20%;">Teacher Index</th>
       <th style="width: 20%;">Name</th>
-      <th style="width: 100%;">Last Name</th>
+      <th style="width: 50%;">Last Name</th>
+      <th style="width: 5%;"></th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let teacher of teachers">
+      <td>{{ teacher.teacherId }}</td>
       <td>{{ teacher.teacherIndex }}</td>
       <td>{{ teacher.name }}</td>
       <td>{{ teacher.lastName }}</td>
+      <td>
+        <button id="delete" (click)="delete(teacher.teacherId)">Delete</button>
+      </td>
     </tr>    </tbody>
   </table>
 </div>

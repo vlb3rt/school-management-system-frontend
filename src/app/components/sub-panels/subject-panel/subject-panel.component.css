@@ -18,7 +18,7 @@
   padding: 10px;
 }
 
-.btn {
+.btn, .delete {
   padding: 5px 10px;
   margin-left: 10px;
   cursor: pointer;
@@ -28,7 +28,7 @@
   border-radius: 3px;
 }
 
-.btn:hover {
+.btn:hover, .delete:hover {
   background-color: #5d0090;
 }
 

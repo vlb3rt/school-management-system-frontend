@@ -1,22 +1,29 @@
 <div class="table-container">
   <div class="table-header">
-    <button class="btn btn-add">Add</button>
+    <button class="btn btn-add" (click)="add()">Add</button>
   </div>
   <table class="student-panel">
     <thead>
     <tr>
+      <th style="width: 5%;">Id</th>
       <th style="width: 20%;">Student Index</th>
       <th style="width: 20%;">Name</th>
       <th style="width: 20%;">Last Name</th>
-      <th style="width: 100%;">Class</th>
+      <th style="width: 30%;">Class</th>
+      <th style="width: 5%;"></th>
+
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let student of students">
+      <td>{{ student.studentId }}</td>
       <td>{{ student.studentIndex }}</td>
       <td>{{ student.name }}</td>
       <td>{{ student.lastName }}</td>
       <td>{{ student.schoolClassName }}</td>
+      <td>
+        <button id="delete" (click)="delete(student.studentId)">Delete</button>
+      </td>
     </tr>    </tbody>
   </table>
 </div>

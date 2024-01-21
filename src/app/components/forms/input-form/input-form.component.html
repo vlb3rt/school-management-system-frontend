@@ -1,0 +1,23 @@
+<div class="background" *ngIf="modalOpened" >
+  <div class="form-container">
+    <h2>{{ cfg?.title}}</h2>
+    <form action="#" class="form-container">
+      <ng-container *ngFor="let field of cfg?.fields">
+        <h4>{{ field.title }}</h4>
+        <div class="form-field">
+          <input #modalInput type="text" *ngIf="field.type==='text'" [value]="field.value" [name]="field.name">
+          <input #modalInput  type="number" *ngIf="field.type==='number'" [value]="field.value" [name]="field.name">
+          <select #modalInput  *ngIf="field.type==='select'">
+
+          </select>
+        </div>
+      </ng-container>
+      <div class="form-field">
+        <button type="submit" (click)="submit()">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+

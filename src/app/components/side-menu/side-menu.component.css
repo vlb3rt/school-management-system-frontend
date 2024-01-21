@@ -1,12 +1,12 @@
 .menu_2 {
   background-color: #8a2be2; /* Fioletowe tło */
-  color: white; /* Biały tekst */
-  width: 250px; /* Szerokość menu */
-  height: calc(100vh - 60px); /* Wysokość dostosowana do paska nawigacyjnego */
+  color: white;
+  width: 250px;
+  height: 100%;
   box-sizing: border-box;
   padding: 10px;
-  border-radius: 10px; /* Zaokrąglone rogi */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
